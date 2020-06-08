@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>DSC106 Project</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Paytone+One&display=swap" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+    <script src="main.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/us/custom/us-small.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a href=""> Home </a>
+            </li>
+            <li>
+                <a href="#lineSection"> C0<sub>2</sub> by Year</a>
+            </li>
+            <li>
+                <a href="#pieSection"> Gases </a>
+            </li>
+            <li>
+                <a href="#stateSection"> State Emissions </a>
+            </li>
+            <li>
+                <a href="#sectorSection"> Sector Emissions </a>
+            </li>
+            <li>
+                <a href="#happenSection"> Temperature </a>
+            </li>
+            <li>
+                <a href="#solutionSection"> Electric </a>
+            </li>
+
+            <li>
+                <a href="#takeaways"> Takeaways </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <br><br><br>
+        <h1>The Ever-Changing Nature of Greenhouse Gas Emissions</h1>
+        <h2>By Sarat Sreepathy</h2>
+        <br><br><br>
+        <img src="gases.jpg">
+    </section>
+    <br><br><br><br><br>
+    <br>
+    <hr />
+
+    <section id="lineSection">
+        <br><br><br><br>
+        <h2>How Things Have Changed Since the 1990s</h2>
+        <div id="lineChart" class="chart-parent--container">
+            <div class="chart--container">
+                <p> <br>From the 1990s, the emissions of carbon dioxide
+                    has increased from around 5300 million metric tons 
+                    to a maximum of 6300 at around 2007. From 2008 onward,
+                    the amount of carbon dioxide emissions has dropped
+                    to around 5500 million metric tons as environmental
+                    policy and regulations began to be put in effect.
+                </p>
+            </div>
+            <div id="line" class="chart--container"></section>
+        </div>
+        <br><br><br>
+    </section>
+    <hr />
+
+    <section id="pieSection">
+        <br><br><br><br>
+        <h2>Gases released From Emissions</h2>
+        <div id="pieChart" class="chart-parent--container">
+            <div class="chart--container">
+                <p> <br> When looking at greenhouse gases, carbon dioxide represents most 
+                    of the emissions. Carbon dioxide is mainly emitted from the need for energy like in industrial processes.
+                     In addition to carbon dioxide, greenhouse gases include methane and nitrous oxide which 
+                    further compund the issues that arises like global warming.
+                </p>
+            </div>
+            <div id="pie" class="chart--container"></section>
+        </div>
+        <br><br><br>
+    </section>
+    <hr />
+    
+    <section id="stateSection">
+        <br><br><br><br>
+        <h2>Emissions from Each State</h2>
+        <div id="stateMap" class="chart-parent--container">
+            <div class="chart--container">
+                <p> <br> States have a different carbon footprint based on factors like population, 
+                    environmental policy, and types of industries. For example, Texas
+                    has the highest amount of carbon emissions beause of their energy industry. 
+                    Densely populated states generally have more emissions. Some states have adopted environmentally 
+                    friendly policies to lower their emissions.
+                </p>
+            </div>
+            <div id="state" class="chart--container"></section>
+        </div>
+        <br><br><br>
+    </section>
+    <hr />
+
+    <section id="sectorSection">
+        <br><br><br><br>
+        <h2>Emissions of Each Sector</h2>
+        <div id="sectorChart" class="chart-parent--container">
+            <div class="chart--container">
+                <p> <br> The leading reason for carbon emissions comes from fossil fuel combustion
+                    which is used in many different areas. The leader in carbon emissions would be 
+                    transportation as vehicles rely on fossil fuels and is used by almost everyone.
+                    Electricity is also very important while industrial, residential, and commercial 
+                    do not have the same carbon emissions as less fossil fuels are needed in those areas.
+                </p>
+            </div>
+            <div id="sector" class="chart--container"></section>
+        </div>
+        <br><br><br>
+    </section>
+    <hr />
+
+    <section id="happenSection">
+        <br><br><br><br>
+        <h2>What is Happening?</h2>
+        <div id="happenChart" class="chart-parent--container">
+            <div class="chart--container">
+                <p> <br> From the 1880s to the 1940s, there was an era of global cooling as 
+                    the change in temperature decreased from year to year. From the 1940s, we 
+                    began to see the rise in temperature which could be a result of booming industry. 
+                    In the 2000s, we can see temperature has risen by 1&#xb0; C.
+                </p>
+            </div>
+            <div id="happening" class="chart--container"></section>
+        </div>
+        <br><br><br>
+    </section>
+    <hr />
+
+    <section id="solutionSection">
+        <br><br><br><br>
+        <h2>What Can Be Done?</h2>
+        <div id="solutionChart" class="chart-parent--container">
+            <div class="chart--container">
+                <p> <br> As emissions and temperatures rised throughout the 2000s, many began to 
+                    discuss the long-term ramifications of increased carbon emissions. The focus on efficiency
+                    was one reason for increased presence of electric vehicles as supposed to vehicles using oil. Electric vehicles have risen 
+                    substantially from 2011 to 2019 as sectors like transportation look for more efficiency.
+                </p>
+            </div>
+            <div id="solution" class="chart--container"></section>
+        </div>
+        <br><br><br>
+    </section>
+    <hr />
+
+    <section id="takeaways">
+        <br><br><br><br>
+        <h2>Takeaways</h2>
+         <p>We could see that since the 1990s, the amount of emissions has 
+            increased with the majority being carbon dioxide emissions. In each state 
+            of the U.S, the amount of emissions varied based on several different factors
+            like population or its energy sector. Some states like Texas have far more emissions
+            than a state like Maryland. We could also see that some areas like transportation
+            have far more emissions than the residental area.
+        </p>
+        <img src='smoke.jpg'>
+        <br><br><br><br>
+    </section>
+</body>
+
+</html>
